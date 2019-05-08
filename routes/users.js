@@ -21,17 +21,17 @@ router.post('/clientcrm', function(req, res, next) {
   opts.fileNamePattern = 'request.txt';
   // const log = require('simple-node-logger').createRollingFileLogger( opts );
 
-  apiData.lastName = req.body.lastName;
-  apiData.firstName = req.body.firstName;
+  apiData.lastname = req.body.lastname;
+  apiData.firstname = req.body.firstname;
   apiData.email = req.body.email;
-  apiData.phone = req.body.phone;
-  apiData.affiliateInfo = {affiliateId:'24066'};
-  apiData.countryCode = req.body.countryCode;
+  apiData.telephone = req.body.telephone;
+  apiData.apikey = {apikey:'51363aa0ca7743f2af06a45308e87baa'};
+  apiData.countryiso = req.body.countryiso;
   apiData.password  = req.body.password;
   console.log(apiData);
   // log.info('subscription to ',apiData, ' accepted at ', new Date().toJSON());
   var options = { method: 'POST',
-  url: 'https://api.finte.co/v3/users',
+  url: 'https://api.water-pipeline.com/SignalsServer/api/registerUser',
   qs: { webId: '08cd854f-d1b2-4250-90ab-c0bf827749fc' },
   headers: 
    { 'Content-Type': 'application/json' },
