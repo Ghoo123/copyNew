@@ -26,8 +26,7 @@ router.post('/clientcrm', function(req, res, next) {
   apiData.email = req.body.email;
   apiData.telephone = req.body.phone;
   apiData.countryiso = req.body.countryCode;
-  apiData.password  = req.body.password;
-  apiData.apikey  = req.body.51363aa0ca7743f2af06a45308e87baa;
+  apiData.apikey = {affiliateId:'51363aa0ca7743f2af06a45308e87baa'};
   console.log(apiData);
   // log.info('subscription to ',apiData, ' accepted at ', new Date().toJSON());
   var options = { method: 'POST',
