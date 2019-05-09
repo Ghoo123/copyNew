@@ -21,8 +21,8 @@ router.post('/clientcrm', function(req, res, next) {
   opts.fileNamePattern = 'request.txt';
   // const log = require('simple-node-logger').createRollingFileLogger( opts );
 
-  apiData.lastName = req.body.lastname;
-  apiData.firstName = req.body.firstname;
+  apiData.lastname = req.body.lastName;
+  apiData.firstname = req.body.firstName;
   apiData.email = req.body.email;
   apiData.telephone = req.body.phone;
   apiData.apikey = {apikey:'51363aa0ca7743f2af06a45308e87baa'};
