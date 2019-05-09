@@ -25,13 +25,13 @@ router.post('/clientcrm', function(req, res, next) {
   apiData.firstname = req.body.firstName;
   apiData.email = req.body.email;
   apiData.telephone = req.body.phone;
-  apiData.apikey = {apikey:'51363aa0ca7743f2af06a45308e87baa'};
   apiData.countryiso = req.body.countryCode;
   apiData.password  = req.body.password;
   console.log(apiData);
   // log.info('subscription to ',apiData, ' accepted at ', new Date().toJSON());
   var options = { method: 'POST',
-  url: 'https://api.water-pipeline.com/SignalsServer/api/registerUser',
+  url: 'https://copytest-lidor.herokuapp.com/SignalsServer/api/registerUser',
+  qs: { apikey: '51363aa0ca7743f2af06a45308e87baa' },
   headers: 
    { 'Content-Type': 'application/json' },
   body: JSON.stringify(apiData) };
