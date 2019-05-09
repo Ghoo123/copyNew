@@ -27,11 +27,11 @@ router.post('/clientcrm', function(req, res, next) {
   apiData.telephone = req.body.phone;
   apiData.countryiso = req.body.countryCode;
   apiData.password  = req.body.password;
+  apiData.apikey  = req.body.51363aa0ca7743f2af06a45308e87baa;
   console.log(apiData);
   // log.info('subscription to ',apiData, ' accepted at ', new Date().toJSON());
   var options = { method: 'POST',
   url: 'https://copytest-lidor.herokuapp.com/SignalsServer/api/registerUser',
-  qs: { apikey: '51363aa0ca7743f2af06a45308e87baa' },
   headers: 
    { 'Content-Type': 'application/json' },
   body: JSON.stringify(apiData) };
