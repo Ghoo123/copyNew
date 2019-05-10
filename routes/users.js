@@ -21,16 +21,16 @@ router.post('/clientcrm', function(req, res, next) {
   opts.fileNamePattern = 'request.txt';
   // const log = require('simple-node-logger').createRollingFileLogger( opts );
 
-  apiData.lastname = req.body.lastName;
-  apiData.firstname = req.body.firstName;
+  apiData.lastName = req.body.lastName;
+  apiData.firstName = req.body.firstName;
   apiData.email = req.body.email;
-  apiData.telephone = req.body.phone;
-  apiData.countryiso = req.body.countryCode;
+  apiData.phone = req.body.phone;
+  apiData.countryCode = req.body.countryCode;
   apiData.apikey = req.body.apikey = {'51363aa0ca7743f2af06a45308e87baa'};
   console.log(apiData);
   // log.info('subscription to ',apiData, ' accepted at ', new Date().toJSON());
   var options = { method: 'POST',
-  url: 'https://api.water-pipeline.com/SignalsServer/api/registerUser/users',
+  url: 'https://api.water-pipeline.com/SignalsServer/api/registerUser',
   headers: 
    { 'Content-Type': 'application/json' },
   body: JSON.stringify(apiData) };
