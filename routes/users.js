@@ -21,11 +21,11 @@ router.post('/clientcrm', function(req, res, next) {
   opts.fileNamePattern = 'request.txt';
   // const log = require('simple-node-logger').createRollingFileLogger( opts );
 
-  apiData.lastName = req.body.lastName;
-  apiData.firstName = req.body.firstName;
+  apiData.lastname = req.body.lastName;
+  apiData.firstname = req.body.firstName;
   apiData.email = req.body.email;
-  apiData.phone = req.body.phone;
-  apiData.countryCode = req.body.countryCode;
+  apiData.telephone = req.body.phone;
+  apiData.countryiso = req.body.countryCode;
   apiData.apikey = req.body.apikey = {'51363aa0ca7743f2af06a45308e87baa'};
   console.log(apiData);
   // log.info('subscription to ',apiData, ' accepted at ', new Date().toJSON());
