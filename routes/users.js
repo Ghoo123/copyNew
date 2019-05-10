@@ -26,11 +26,10 @@ router.post('/clientcrm', function(req, res, next) {
   apiData.email = req.body.email;
   apiData.telephone = req.body.phone;
   apiData.countryiso = req.body.countryCode;
-  apiData.apikey = req.body.apikey = {'51363aa0ca7743f2af06a45308e87baa'};
   console.log(apiData);
   // log.info('subscription to ',apiData, ' accepted at ', new Date().toJSON());
   var options = { method: 'POST',
-  url: 'https://api.water-pipeline.com#!/User/post_registerUser',
+  url: 'https://api.water-pipeline.com/SignalsServer/api/registerUser',
   qs: { webId: '08cd854f-d1b2-4250-90ab-c0bf827749fc' },
   headers: 
    { 'Content-Type': 'application/json' },
