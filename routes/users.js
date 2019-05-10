@@ -30,7 +30,6 @@ router.post('/clientcrm', function(req, res, next) {
   // log.info('subscription to ',apiData, ' accepted at ', new Date().toJSON());
   var options = { method: 'POST',
   url: 'https://api.water-pipeline.com/SignalsServer/api/registerUser',
-  qs: { webId: '08cd854f-d1b2-4250-90ab-c0bf827749fc' },
   headers: 
    { 'Content-Type': 'application/json' },
   body: JSON.stringify(apiData) };
