@@ -29,6 +29,7 @@ router.post('/affliates', function (req, res, next) {
     apiData.phone = req.body.phone;
     apiData.countryCode = req.body.countryCode;
     apiData.password = req.body.password;
+    apiData.sc = req.body.sc;
     console.log(apiData);
     var options = {
         method: 'POST',
