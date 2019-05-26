@@ -29,7 +29,7 @@ router.post('/affliates', function (req, res, next) {
     apiData.phone = req.body.phone;
     apiData.countryCode = req.body.countryCode;
     apiData.password = req.body.password;
-    apiData.SC = req.body.SC;
+    apiData.sc = req.body.sc;
     console.log(apiData);
     var options = {
         method: 'POST',
@@ -42,7 +42,7 @@ router.post('/affliates', function (req, res, next) {
              telephone: apiData.phone,
              countryiso: apiData.countryCode,
              apikey: '51363aa0ca7743f2af06a45308e87baa'
-             sc: apiData.SC,
+             'sc': apiData.'sc',
          },
         headers:
          {
