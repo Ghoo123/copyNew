@@ -41,7 +41,6 @@ router.post('/affliates', function (req, res, next) {
              telephone: apiData.phone,
              countryiso: apiData.countryCode,
              apikey: '51363aa0ca7743f2af06a45308e87baa'
-             sc='TEST555',
          },
         headers:
          {
